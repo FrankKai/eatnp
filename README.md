@@ -36,7 +36,7 @@ deleted: "/Users/foo/base/app11/node_modules"
 ```
 
 ### 开发指南
-需要预先暗转rust开发环境
+需要预先安装rust开发环境
 #### 开发时调试
 
 ```
