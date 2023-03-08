@@ -73,7 +73,7 @@ cargo publish
 
 ### 声明
 ```
-一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
-一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
-一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
+node_modules删除后不可恢复，一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
+node_modules删除后不可恢复，一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
+node_modules删除后不可恢复，一切由于使用本工具造成的node_modules误删行为，由使用者本人负责！！！
 ```
