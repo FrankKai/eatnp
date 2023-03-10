@@ -23,17 +23,17 @@ eatnodemodules /Users/foo/base
 例如
 
 ```
-deleted: "/Users/foo/base/app1/node_modules"
-deleted: "/Users/foo/base/app2/node_modules"
-deleted: "/Users/foo/base/app3/node_modules"
-deleted: "/Users/foo/base/app4/node_modules"
-deleted: "/Users/foo/base/app5/node_modules"
-deleted: "/Users/foo/base/app6/node_modules"
-deleted: "/Users/foo/base/app7/node_modules"
-deleted: "/Users/foo/base/app8/node_modules"
-deleted: "/Users/foo/base/app9/node_modules"
-deleted: "/Users/foo/base/app10/node_modules"
-deleted: "/Users/foo/base/app11/node_modules"
+deleted: "/Users/foo/base/app1/node_modules                                              | size 402 MB"
+deleted: "/Users/foo/base/app2/node_modules                                              | size 502 MB"
+deleted: "/Users/foo/base/app3/node_modules                                              | size 42 MB"
+deleted: "/Users/foo/base/app4/node_modules                                              | size 98 MB"
+deleted: "/Users/foo/base/app5/node_modules                                              | size 232 MB"
+deleted: "/Users/foo/base/app6/node_modules                                              | size 451 MB"
+deleted: "/Users/foo/base/app7/node_modules                                              | size 423 MB"
+deleted: "/Users/foo/base/app8/node_modules                                              | size 984 MB"
+deleted: "/Users/foo/base/app9/node_modules                                              | size 322 MB"
+deleted: "/Users/foo/base/app10/node_modules                                             | size 242 MB"
+deleted: "/Users/foo/base/app11/node_modules                                             | size 121 MB"
 ```
 
 ### 开发指南
@@ -67,9 +67,12 @@ cargo publish --dry-run
 cargo publish
 ```
 
+### FAQ
+#### 没有英文版README？
+懒得翻译了，看不懂中文的话，试试“翻译成英文”。
 
-### 没有英文版README？
-懒得翻译了，看不懂中文自己“翻译成英文”去。
+#### node_modules目录是 真实文件大小 还是 文件在磁盘上的大小？
+真实文件大小。[真实文件大小与文件在磁盘上的大小区别](https://web.archive.org/web/20140712235443/https://stackoverflow.com/questions/15470787/please-help-me-understand-size-vs-size-on-disk)
 
 ### 声明
 ```
