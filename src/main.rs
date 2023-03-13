@@ -23,7 +23,8 @@ fn run(dir: &String) {
             if opath.ends_with(&reg) {
                 let cpath = opath.clone();
                 let dir_size = get_size(&cpath).unwrap() / 1024 / 1024;
-                fs::remove_dir_all(opath);
+                // ignore result
+                fs::remove_dir_all(opath).ok();
                 println!(
                     "deleted: {:80}| size {:?} MB",
                     &cpath,
