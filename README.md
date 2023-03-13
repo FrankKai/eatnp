@@ -1,4 +1,4 @@
-## eatnodemodules
+## eatnp
 快速释放前端项目node_modules存储空间。
 ### 为什么要写这个工具
 ```
@@ -11,13 +11,13 @@
 
 ### 如何安装
 ```
-cargo install eatnodemodules
+cargo install eatnp
 ```
 
 ### 使用示例
 
 ```
-eatnodemodules /Users/foo/base
+eatnp /Users/foo/base
 ```
 
 例如
@@ -46,11 +46,11 @@ cargo run -- /path/dir/
 
 #### 打包出bin运行
 ```shell
-cargo build --bin eatnodemodules
+cargo build --bin eatnp
 ```
 
 ```
-./target/debug/eatnodemodules /path/dir/
+./target/debug/eatnp /path/dir/
 ```
 
 

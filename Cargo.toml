@@ -1,11 +1,11 @@
 [package]
-name = "eatnodemodules"
+name = "eatnp"
 version = "0.1.4"
 authors = ["FrankKai 20100801@gmail.com"]
 edition = "2021"
 description = "eat node_modules"
 license = "MIT/Apache-2.0"
-repository = "https://github.com/FrankKai/eatnodemodules"
+repository = "https://github.com/FrankKai/eatnp"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,5 +15,5 @@ fs_extra = "1.2.0"
 
 [[bin]]
 edition = "2021"
-name = "eatnodemodules"
+name = "eatnp"
 path = "src/main.rs"
