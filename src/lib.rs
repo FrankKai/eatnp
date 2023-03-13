@@ -1,10 +1,11 @@
 use std::fs;
 use std::path::Path;
+use std::error::Error;
+
 extern crate fs_extra;
 use fs_extra::dir::get_size;
 
-
-pub fn run(dir: &String) {
+pub fn run(dir: &String) -> Result<(), Box<dyn Error>> {
     let reg = "node_modules".to_string();
     let paths = fs::read_dir(dir).unwrap();
 
@@ -20,8 +21,9 @@ pub fn run(dir: &String) {
                 fs::remove_dir_all(opath).ok();
                 println!("deleted: {:80}| size {:?} MB", &cpath, dir_size,);
             } else {
-                run(&opath);
+                run(&opath).ok();
             }
         }
     }
+    Ok(())
 }
